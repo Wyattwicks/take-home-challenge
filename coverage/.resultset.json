@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/wyattwicks/turing/4module/takehomepractice/takehome/spec/models/customers_spec.rb": {
+      "/Users/wyattwicks/turing/4module/takehomepractice/takehome/spec/models/customer_spec.rb": {
         "lines": [
           1,
           1,
@@ -307,7 +307,7 @@
           null,
           null,
           1,
-          2,
+          1,
           null,
           null,
           null,
@@ -345,9 +345,10 @@
           null
         ]
       },
-      "/Users/wyattwicks/turing/4module/takehomepractice/takehome/spec/models/subscription_spec.rb": {
+      "/Users/wyattwicks/turing/4module/takehomepractice/takehome/spec/models/customer_subscription_spec.rb": {
         "lines": [
           1,
+          null,
           1,
           1,
           2,
@@ -356,8 +357,31 @@
           null
         ]
       },
+      "/Users/wyattwicks/turing/4module/takehomepractice/takehome/app/models/customer_subscription.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null
+        ]
+      },
+      "/Users/wyattwicks/turing/4module/takehomepractice/takehome/spec/models/subscription_spec.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          2,
+          2,
+          2,
+          2,
+          null,
+          null
+        ]
+      },
       "/Users/wyattwicks/turing/4module/takehomepractice/takehome/app/models/subscription.rb": {
         "lines": [
+          1,
+          1,
           1,
           1,
           1,
@@ -385,242 +409,26 @@
           null
         ]
       },
-      "/Users/wyattwicks/turing/4module/takehomepractice/takehome/spec/requests/api/v1/create_customer_spec.rb": {
+      "/Users/wyattwicks/turing/4module/takehomepractice/takehome/spec/models/tea_subscription_spec.rb": {
         "lines": [
           1,
-          null,
           1,
           1,
-          1,
-          1,
-          null,
-          null,
-          null,
-          null,
-          null,
-          1,
-          1,
-          null,
-          1,
-          1,
-          null,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          null,
+          2,
+          2,
           null,
           null
         ]
       },
-      "/Users/wyattwicks/turing/4module/takehomepractice/takehome/spec/requests/api/v1/create_tea_spec.rb": {
-        "lines": [
-          1,
-          null,
-          1,
-          1,
-          1,
-          1,
-          null,
-          null,
-          null,
-          null,
-          null,
-          1,
-          1,
-          null,
-          1,
-          1,
-          null,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          null,
-          null,
-          null
-        ]
-      },
-      "/Users/wyattwicks/turing/4module/takehomepractice/takehome/spec/requests/api/v1/subscribe_customer_spec.rb": {
-        "lines": [
-          1,
-          null,
-          1,
-          1,
-          1,
-          1,
-          null,
-          null,
-          1,
-          null,
-          1,
-          1,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          1,
-          1,
-          null,
-          1,
-          1,
-          null,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          null,
-          null,
-          null
-        ]
-      },
-      "/Users/wyattwicks/turing/4module/takehomepractice/takehome/app/controllers/api/v1/customers_controller.rb": {
+      "/Users/wyattwicks/turing/4module/takehomepractice/takehome/app/models/tea_subscription.rb": {
         "lines": [
           1,
           1,
           1,
-          1,
-          1,
-          null,
-          null,
-          1,
-          null,
-          1,
-          1,
-          null,
-          null
-        ]
-      },
-      "/Users/wyattwicks/turing/4module/takehomepractice/takehome/app/controllers/application_controller.rb": {
-        "lines": [
-          1,
-          null
-        ]
-      },
-      "/Users/wyattwicks/turing/4module/takehomepractice/takehome/app/serializers/customers_serializer.rb": {
-        "lines": [
-          1,
-          1,
-          1,
-          null,
-          null,
-          null,
-          null
-        ]
-      },
-      "/Users/wyattwicks/turing/4module/takehomepractice/takehome/app/controllers/api/v1/teas_controller.rb": {
-        "lines": [
-          1,
-          1,
-          1,
-          1,
-          1,
-          null,
-          null,
-          1,
-          null,
-          1,
-          1,
-          null,
-          null
-        ]
-      },
-      "/Users/wyattwicks/turing/4module/takehomepractice/takehome/app/serializers/teas_serializer.rb": {
-        "lines": [
-          1,
-          1,
-          1,
-          null,
-          null,
-          null,
-          null
-        ]
-      },
-      "/Users/wyattwicks/turing/4module/takehomepractice/takehome/app/controllers/api/v1/subscriptions_controller.rb": {
-        "lines": [
-          1,
-          null,
-          1,
-          null,
-          null,
-          1,
-          1,
-          1,
-          1,
-          null,
-          null,
-          1,
-          null,
-          null,
-          1,
-          null,
-          1,
-          1,
-          null,
-          null
-        ]
-      },
-      "/Users/wyattwicks/turing/4module/takehomepractice/takehome/app/serializers/subscription_serializer.rb": {
-        "lines": [
-          1,
-          1,
-          1,
-          null,
-          null,
-          null,
-          null,
-          null,
           null
         ]
       }
     },
-    "timestamp": 1627490217
+    "timestamp": 1627503117
   }
 }

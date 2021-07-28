@@ -10,10 +10,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_07_26_212842) do
+ActiveRecord::Schema.define(version: 2021_07_28_195613) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "customer_subscriptions", force: :cascade do |t|
+    t.bigint "customer_id"
+    t.bigint "subscription_id"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["customer_id"], name: "index_customer_subscriptions_on_customer_id"
+    t.index ["subscription_id"], name: "index_customer_subscriptions_on_subscription_id"
+  end
 
   create_table "customers", force: :cascade do |t|
     t.string "first_name"
@@ -29,12 +38,17 @@ ActiveRecord::Schema.define(version: 2021_07_26_212842) do
     t.float "price"
     t.integer "status", default: 1
     t.integer "frequency"
-    t.bigint "customer_id", null: false
-    t.bigint "tea_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.index ["customer_id"], name: "index_subscriptions_on_customer_id"
-    t.index ["tea_id"], name: "index_subscriptions_on_tea_id"
+  end
+
+  create_table "tea_subscriptions", force: :cascade do |t|
+    t.bigint "tea_id"
+    t.bigint "subscription_id"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["subscription_id"], name: "index_tea_subscriptions_on_subscription_id"
+    t.index ["tea_id"], name: "index_tea_subscriptions_on_tea_id"
   end
 
   create_table "teas", force: :cascade do |t|
@@ -46,6 +60,8 @@ ActiveRecord::Schema.define(version: 2021_07_26_212842) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
-  add_foreign_key "subscriptions", "customers"
-  add_foreign_key "subscriptions", "teas"
+  add_foreign_key "customer_subscriptions", "customers"
+  add_foreign_key "customer_subscriptions", "subscriptions"
+  add_foreign_key "tea_subscriptions", "subscriptions"
+  add_foreign_key "tea_subscriptions", "teas"
 end
