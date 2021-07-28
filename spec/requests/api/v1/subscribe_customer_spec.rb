@@ -23,7 +23,28 @@ RSpec.describe 'Subscribe a Customer' do
       subscription = Subscription.last
 
       expect(response).to be_successful
-      expect(response.status).to eq(200)
+      expect(response.status).to eq(201)
+      expect(result).to be_a(Hash)
+      expect(result[:data]).to be_a(Hash)
+      expect(result[:data].count).to eq(3)
+      expect(result[:data]).to have_key(:id)
+      expect(result[:data][:id]).to be_a(String)
+      expect(result[:data][:id]).to eq(subscription.id.to_s)
+      expect(result[:data]).to have_key(:attributes)
+      expect(result[:data][:attributes]).to be_a(Hash)
+      expect(result[:data][:attributes].count).to eq(6)
+      expect(result[:data][:attributes]).to have_key(:title)
+      expect(result[:data][:attributes][:title]).to be_a(String)
+      expect(result[:data][:attributes]).to have_key(:customer_id)
+      expect(result[:data][:attributes][:customer_id]).to be_an(Integer)
+      expect(result[:data][:attributes]).to have_key(:tea_id)
+      expect(result[:data][:attributes][:tea_id]).to be_an(Integer)
+      expect(result[:data][:attributes]).to have_key(:status)
+      expect(result[:data][:attributes][:status]).to eq('active')
+      expect(result[:data][:attributes]).to have_key(:frequency)
+      expect(result[:data][:attributes][:frequency]).to be_a(Integer)
+      expect(result[:data][:attributes]).to have_key(:price)
+      expect(result[:data][:attributes][:price]).to be_a(Float)
     end
   end
 end
