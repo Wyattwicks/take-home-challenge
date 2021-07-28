@@ -88,6 +88,8 @@ GEM
       multipart-post (>= 1.2, < 3)
     faraday_middleware (0.14.0)
       faraday (>= 0.7.4, < 1.0)
+    fast_jsonapi (1.5)
+      activesupport (>= 4.2)
     ffi (1.15.3)
     gh (0.15.1)
       addressable (~> 2.4.0)
@@ -242,6 +244,7 @@ DEPENDENCIES
   bootsnap (>= 1.4.4)
   byebug
   capybara
+  fast_jsonapi
   listen (>= 3.0.5, < 3.2)
   pg (~> 1.1)
   pry
