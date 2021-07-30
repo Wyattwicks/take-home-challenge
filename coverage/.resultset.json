@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/wyattwicks/turing/4module/takehomepractice/takehome/spec/requests/api/v1/create_customer_subscriptions_spec.rb": {
+      "/Users/wyattwicks/turing/4module/takehomepractice/takehome/spec/requests/api/v1/cancel_customer_subscription_spec.rb": {
         "lines": [
           1,
           null,
@@ -33,25 +33,21 @@
           null,
           1,
           null,
-          null,
-          1,
-          1,
-          null,
           1,
           null,
           null,
           null,
           null,
           1,
+          null,
+          null,
+          1,
           1,
           null,
           1,
           1,
-          null,
           1,
           1,
-          null,
-          null,
           null,
           null,
           null
@@ -411,10 +407,25 @@
           null
         ]
       },
+      "/Users/wyattwicks/turing/4module/takehomepractice/takehome/app/models/customer_subscription.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null
+        ]
+      },
       "/Users/wyattwicks/turing/4module/takehomepractice/takehome/app/controllers/api/v1/customer_subscriptions_controller.rb": {
         "lines": [
           1,
           null,
+          1,
+          0,
+          0,
+          0,
+          null,
+          null,
+          1,
           1,
           1,
           1,
@@ -435,15 +446,7 @@
           null
         ]
       },
-      "/Users/wyattwicks/turing/4module/takehomepractice/takehome/app/models/customer_subscription.rb": {
-        "lines": [
-          1,
-          1,
-          1,
-          null
-        ]
-      },
-      "/Users/wyattwicks/turing/4module/takehomepractice/takehome/app/serializers/customer_subscription_serializer.rb": {
+      "/Users/wyattwicks/turing/4module/takehomepractice/takehome/app/serializers/subscription_serializer.rb": {
         "lines": [
           1,
           1,
@@ -452,6 +455,6 @@
         ]
       }
     },
-    "timestamp": 1627504436
+    "timestamp": 1627605997
   }
 }
