@@ -13,6 +13,13 @@ class Api::V1::CustomerSubscriptionsController < ApplicationController
     render json: SubscriptionSerializer.new(cancelled), status: :created
   end
 
+  def show
+    customer = Customer.find(params[:id])
+    subscriptions = customer.subscriptions
+    render json: SubscriptionSerializer.new(subscriptions), status: :created
+
+  end
+
   private
 
   def customer_subscription_params

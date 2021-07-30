@@ -1,7 +1,5 @@
 class Api::V1::SubscriptionsController < ApplicationController
 
-  def index
-  end
 
   def create
     subscription = Subscription.new(subscription_params)
